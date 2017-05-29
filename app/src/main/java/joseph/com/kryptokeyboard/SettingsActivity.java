@@ -1,8 +1,6 @@
-package joseph.com.antinasakeyboard;
+package joseph.com.kryptokeyboard;
 
 import android.preference.PreferenceActivity;
-import android.preference.PreferenceFragment;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 public class SettingsActivity extends PreferenceActivity {

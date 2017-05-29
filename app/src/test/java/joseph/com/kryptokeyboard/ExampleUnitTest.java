@@ -1,4 +1,4 @@
-package joseph.com.antinasakeyboard;
+package joseph.com.kryptokeyboard;
 
 import org.junit.Test;
 

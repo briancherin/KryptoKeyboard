@@ -1,21 +1,8 @@
-package joseph.com.antinasakeyboard;
+package joseph.com.kryptokeyboard;
 
-import android.content.Intent;
-import android.graphics.Bitmap;
-import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceFragment;
-import android.provider.MediaStore;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageView;
-
-import java.io.FileNotFoundException;
-import java.io.IOException;
-
-import static android.app.Activity.RESULT_OK;
 
 /**
  * Created by Brian on 5/27/2017.

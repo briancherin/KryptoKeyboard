@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="joseph.com.antinasakeyboard">
+    package="joseph.com.kryptokeyboard">
 
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <uses-permission android:name="android.permission.READ_SMS" />
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.CAMERA" />
 
-    <application android:label="Encrypt Input Keyboard">
+    <application android:label="KryptoKeyboard">
         <service
-            android:name=".EncryptInputIME"
+            android:name="joseph.com.kryptokeyboard.EncryptInputIME"
             android:permission="android.permission.BIND_INPUT_METHOD">
             <intent-filter>
                 <action android:name="android.view.InputMethod" />
@@ -22,7 +22,7 @@
 
 
         <receiver
-            android:name=".SmsManager"
+            android:name="joseph.com.kryptokeyboard.SmsManager"
             android:enabled="true"
             android:exported="true">
             <intent-filter android:priority="999">
@@ -31,7 +31,7 @@
         </receiver>
 
         <activity
-            android:name=".SettingsActivity"
+            android:name="joseph.com.kryptokeyboard.SettingsActivity"
             android:label="@string/title_activity_settings" />
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>

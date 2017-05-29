@@ -1,4 +1,4 @@
-package joseph.com.antinasakeyboard;
+package joseph.com.kryptokeyboard;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

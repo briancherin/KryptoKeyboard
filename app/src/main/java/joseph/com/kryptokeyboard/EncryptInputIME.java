@@ -1,22 +1,14 @@
-package joseph.com.antinasakeyboard;
+package joseph.com.kryptokeyboard;
 
-import android.app.Activity;
-import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.Intent;
 import android.inputmethodservice.InputMethodService;
 import android.inputmethodservice.Keyboard;
 import android.inputmethodservice.KeyboardView;
-import android.provider.MediaStore;
-import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputConnection;
-import android.view.inputmethod.InputMethodManager;
 
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -99,6 +91,8 @@ public class EncryptInputIME extends InputMethodService implements KeyboardView.
 
        String output = "";
 
+        InputConnection ic = getCurrentInputConnection();
+
         switch(i){
             case 167:
 
@@ -109,19 +103,24 @@ public class EncryptInputIME extends InputMethodService implements KeyboardView.
                 break;
             case 961:   //clip 1
                 output = ClipboardHelper.readLineFromFile(1);
+                ic.setComposingText(output, 1);
 
                 break;
             case 945:   //clip 2
                 output = ClipboardHelper.readLineFromFile(2);
+                ic.setComposingText(output, 1);
                 break;
             case 1109:  //clip 3
                 output = ClipboardHelper.readLineFromFile(3);
+                ic.setComposingText(output, 1);
                 break;
             case 1090:  //clip 4
                 output = ClipboardHelper.readLineFromFile(4);
+                ic.setComposingText(output, 1);
                 break;
             case 1108:  //clip 5
                 output = ClipboardHelper.readLineFromFile(5);
+                ic.setComposingText(output, 1);
              //   ClipboardHelper.clearFile();
                 break;
             case 10005: //clear clipboard key
@@ -149,7 +148,7 @@ public class EncryptInputIME extends InputMethodService implements KeyboardView.
 
         }
 
-        InputConnection ic = getCurrentInputConnection();
+
         inputText += output;
    //     ic.setComposingText((output == null) ? "" : output, 1);
        // ic.setComposingText(output, 1);

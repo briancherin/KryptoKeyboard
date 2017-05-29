@@ -22,7 +22,7 @@
  * Created by Isaac Potoczny-Jones on 11/12/14.
  */
 
-package joseph.com.antinasakeyboard;
+package joseph.com.kryptokeyboard;
 
 import java.io.ByteArrayOutputStream;
 import java.io.DataInputStream;

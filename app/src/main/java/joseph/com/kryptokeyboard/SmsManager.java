@@ -1,4 +1,4 @@
-package joseph.com.antinasakeyboard;
+package joseph.com.kryptokeyboard;
 
 /**
  * Created by shrey on 5/28/16.
@@ -7,14 +7,11 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Vibrator;
 import android.telephony.SmsMessage;
-import android.util.Log;
 
 import java.security.GeneralSecurityException;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 
 public class  SmsManager extends BroadcastReceiver {
